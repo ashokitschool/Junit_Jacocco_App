@@ -1,0 +1,26 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: AshokIT@123
+    url: jdbc:mysql://localhost:3306/sbms
+    username: ashokit
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    host: smtp.gmail.com
+    password: pwd
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: ashokit@gmail.com
+reg-app: 
+  messages:
+    regMailSubject: User Registration Success
+    regMailBodyTemplateFile: UNLOCK-ACC-EMAIL-BODY-TEMPLATE.txt
